@@ -31,8 +31,6 @@ void scores()
 	}
 	//cout << content << "\n";
 
-	// Poprawiæ ¿eby wyœwietla³o sie ³adnie podczas wyswietlania tabeli wynikow bo wyswietla sie tylko 1 rzad od gory
-
 	deserializeJson(doc, content);
 
 	for (JsonPair keyValue : doc.as<JsonObject>())
@@ -122,7 +120,7 @@ void game()
 	cin >> nick;
 
 	cout << "----- ZASADY GRY -----" << endl << "W momencie rozpoczecia gry bedziesz musial wpisac ile gwiazdek widzisz na ekranie." << endl;
-	cout << "W przypadku podania poprawnej odpowiedzi iloœæ gwiazdek zostanie dodana do Twojego lacznego wyniku." << endl;
+	cout << "W przypadku podania poprawnej odpowiedzi ilosc gwiazdek zostanie dodana do Twojego lacznego wyniku." << endl;
 	cout << "W przypadku podania blednej odpowiedzi gra zakonczy sie natychmiastowo, a Twoj wynik pojawi sie w tabeli wynikow" << endl;
 	cout << "Gra rozpocznie sie za 10 sekund..." << endl;
 	Sleep(10000);
