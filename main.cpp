@@ -26,16 +26,11 @@ void scores()
 	string line;
 	while (getline(highscores, line))
 	{
-		//content += line;
-		cout << line << "\n";
-	}
-	//cout << content << "\n";
-
-	deserializeJson(doc, content);
-
-	for (JsonPair keyValue : doc.as<JsonObject>())
-	{
-		cout << keyValue.key() << " : " << keyValue.value() << "\n";
+		deserializeJson(doc, line);
+		for (JsonPair keyValue : doc.as<JsonObject>())
+		{
+			cout << keyValue.key() << " : " << keyValue.value() << "\n";
+		}
 	}
 
 	highscores.close();
